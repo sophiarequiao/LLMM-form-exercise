@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/procesar" metodo="post">
+    <form action="/procesar" method="post">
         <fieldset>
             <legend>Datos del cliente</legend>
             <label for="name">Nombre completo</label>
@@ -34,17 +34,18 @@
                 <option value="Business">Business</option>
                 <option value="viewCabin">Suite con vistas</option>
             </select>
-            <label for="typeOfSpacesuit">Tipo de traje espacial</label>
-            <input type="radio" name="typeOfSpacesuit" id="classic" value = "classic">
-            <label for="classic">Clásico</label>
-            <input type="radio" name="typeOfSpacesuit" id="premium" value="premium">
-            <label for="premium">Premium</label>
-            <input type="radio" name="typeOfSpacesuit" id="light" value="light">
-            <label for="classic">Light</label>
-            <label for=""></label>
+            <fieldset>
+                <legend>Tipo de traje espacial</legend>
+                <input type="radio" name="typeOfSpacesuit" id="classic" value = "classic">
+                <label for="classic">Clásico</label>
+                <input type="radio" name="typeOfSpacesuit" id="premium" value="premium">
+                <label for="premium">Premium</label>
+                <input type="radio" name="typeOfSpacesuit" id="light" value="light">
+                <label for="classic">Light</label>
+            </fieldset>
             <label for="lunarDestinations">Elija tu destinación</label>
-            <input list="suggested-destination" id="lunarDestinations" name="lunarDestinations" />
-            <datalist id="suggested-destination">
+            <input list="suggestedDestination" id="lunarDestinations" name="lunarDestinations" />
+            <datalist id="suggestedDestination">
                 <option value="Mar de la tranquilidad"></option>
                 <option value="Cráter lunar central"></option>
             </datalist>
@@ -52,14 +53,16 @@
 
         <fieldset>
             <legend>Extras y preferencias</legend>
-            <input type="checkbox" id = "gourmetFood" name="extraService" value = "gourmetFood">
-            <label for="gourmetFood">Comida gourmet</label>
-            <input type="checkbox" id = "earthPicture" name="extraService" value = "earthPicture">
-            <label for="earthPicture">Foto con la Tierra de fondo</label>
-            <input type="checkbox" id = "meteoriteInsurance" name="extraService" value = "meteoriteInsurance">
-            <label for="meteoriteInsurance">Seguro de meteoritos</label>
-            <input type="checkbox" id = "souvenirs" name="extraService" value = "souvenirs">
-            <label for="souvenirs">Souvenirs</label>
+            <fieldset>
+                <input type="checkbox" id = "gourmetFood" name="extraService" value = "gourmetFood">
+                <label for="gourmetFood">Comida gourmet</label>
+                <input type="checkbox" id = "earthPicture" name="extraService" value = "earthPicture">
+                <label for="earthPicture">Foto con la Tierra de fondo</label>
+                <input type="checkbox" id = "meteoriteInsurance" name="extraService" value = "meteoriteInsurance">
+                <label for="meteoriteInsurance">Seguro de meteoritos</label>
+                <input type="checkbox" id = "souvenirs" name="extraService" value = "souvenirs">
+                <label for="souvenirs">Souvenirs</label>
+            </fieldset>
             <label for="heightScare">Nivel de miedo a las alturas</label>
             <input type="range" name="heightScare" id="heightScare" min="0" max="10">
             <label for="comments">Comentarios</label>
