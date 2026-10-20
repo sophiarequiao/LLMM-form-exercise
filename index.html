@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,11 +11,11 @@
         <fieldset>
             <legend>Datos del cliente</legend>
             <p>
-                <label for="name">Nombre completo</label>
+                <label for="name">Nombre completo: </label>
                 <input type="text" id = "name" name="name" required placeholder="Pepito Pepito Pepito">
             </p>
             <p>
-                <label for="email">Correo electrónico</label>
+                <label for="email">Correo electrónico: </label>
                 <input type="email" id = "email" name="email" required pattern="[a-zA-Z0-9_]+@[a-zA-Z0-9]+.com" placeholder="pepito@gmail.com">
             </p>
             <p>
@@ -59,7 +60,7 @@
                 </select>
             </p>
             <fieldset>
-                <legend>Tipo de traje espacial</legend>
+                <legend class="subLegend">Tipo de traje espacial</legend>
                 <ul>
                     <li>
                         <input type="radio" name="typeOfSpacesuit" id="classic" value = "classic">
@@ -86,7 +87,7 @@
         </fieldset>
         <fieldset>
             <legend>Extras y preferencias</legend>
-            <fieldset>
+            <div class="extras">
                 <ul>
                     <li>
                         <input type="checkbox" id = "gourmetFood" name="extraService" value = "gourmetFood">
@@ -105,7 +106,7 @@
                         <label for="souvenirs">Souvenirs</label>
                     </li>
                 </ul>
-            </fieldset>
+            </div>
             <p>
                 <label for="heightScare">Nivel de miedo a las alturas: </label>
                 <input type="range" name="heightScare" id="heightScare" min="0" max="10">
@@ -119,9 +120,10 @@
                 <label for="conditions">Acepto las condiciones</label>
             </p>
         </fieldset>
-        
-        <button type="submit">Reservar mi plaza</button>
-        <button type="reset">Empezar de nuevo</button>
+        <div class="buttons">
+            <button type="submit" class="accept">Confirmar</button>
+            <button type="reset" class="reset">Resetear</button>
+        </div>
     </form>
     
 </body>
