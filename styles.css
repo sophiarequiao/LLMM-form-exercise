@@ -3,12 +3,15 @@
 *{
     font-family: "Orbitron", sans-serif;
     letter-spacing: 3px;
+    margin: 0px;
 }
 
 body{
-    margin: 20px;
     background-color: #464d70;
-    color: #a1ac88;
+    color: #BDC6AE;
+}
+.formulario{
+    margin: 20px;
 }
 
 legend{
@@ -30,6 +33,43 @@ button{
     font-size: 16px;
     color: #222;
     font-weight: 460;
+}
+
+.beginPage {
+    display: flex;
+    flex-direction: column;
+    font-size: 150px;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(/imgs/spaceship.jpg);
+    background-clip: content-box;
+    text-shadow: 1px 1px 0 #80569B,
+        2px 2px 0 #80569B,
+        3px 3px 0 #80569B,
+        4px 4px 0 #80569B,
+        5px 5px 0 #80569B,
+        6px 6px 0 #80569B,
+        7px 7px 0 #80569B,
+        8px 8px 0 #80569B,
+        9px 9px 0 #80569B,
+        10px 10px 0 #80569B,
+        11px 11px 0 #80569B,
+        12px 12px 0 #80569B,
+        13px 13px 0 #80569B,
+        14px 14px 0 #80569B,
+        15px 15px 0 #80569B,
+        16px 16px 0 #80569B,
+        17px 17px 0 #80569B,
+        18px 18px 0 #80569B,
+        19px 19px 0 #80569B,
+        20px 20px 0 #80569B
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 ul {
