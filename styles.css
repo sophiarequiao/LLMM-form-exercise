@@ -10,22 +10,24 @@ body{
     color: #BDC6AE;
     background: url(/imgs/spaceship.jpg) fixed;
 }
+
 .formulario{
-    margin: 20px;
+    font-size: 20pxpx;
+    margin: 30px;
     background-color: #464d70;
     padding: 20px;
     border-radius: 20px;
 }
 
 legend{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0px 50px;
 }
 
 .subLegend{
-    font-size: 17px;
+    font-size: 20px;
 }
 
 button{
@@ -90,10 +92,10 @@ p{
 }
 
 fieldset{
-    margin: 10px 0px;
+    margin: 30px 0px;
     border-radius: 20px;
-    border-width: 10px;
-    border-color:#222;
+    border:10px groove #222;
+
 }
 
 .extras{
@@ -105,13 +107,16 @@ fieldset{
     display: flex;
     align-items: end;
     justify-content: end;
-    gap: 10px;
+    gap: 20px;
 }
 
 .accept{
     background-color: #c5e65c;
     &:hover{
     background-color: #a3d20a;
+    }
+    span{
+        font-weight:1000;
     }
 }
 
@@ -188,7 +193,11 @@ input[type=range]
     gap: 20px;
 }
 
-.gato_abduzido{
-    border-radius: 20px;
-    align-self: center;
-}
+h1, h2 {
+    text-align: center;
+    margin: 10px 0px 30px 0px;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+}   
+
