@@ -29,6 +29,7 @@ button{
     border-radius: 10px;
     font-size: 16px;
     color: #222;
+    font-weight: 460;
 }
 
 ul {
@@ -45,10 +46,9 @@ fieldset{
 }
 
 .extras{
-    border: 1px solid #222;
+    border: 10px groove #222;
     border-radius: 20px;
     padding: 10px;
-    
 }
 .buttons{
     display: flex;
@@ -64,4 +64,21 @@ fieldset{
 .reset{
     background-color: #d9434f;
 }
+.datos_cliente{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.gato_abduzido{
+    border-radius: 20px;
+    align-self: center;
+}
+
+.accept:hover{
+    background-color: #a3d20a;
+}
+
+.reset:hover{
+    background-color: #cc0f1f;
+}
