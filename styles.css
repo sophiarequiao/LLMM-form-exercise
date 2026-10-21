@@ -7,11 +7,14 @@
 }
 
 body{
-    background-color: #464d70;
     color: #BDC6AE;
+    background: url(/imgs/spaceship.jpg) fixed;
 }
 .formulario{
     margin: 20px;
+    background-color: #464d70;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 legend{
@@ -43,8 +46,6 @@ button{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: url(/imgs/spaceship.jpg);
-    background-clip: content-box;
     text-shadow: 1px 1px 0 #80569B,
         2px 2px 0 #80569B,
         3px 3px 0 #80569B,
@@ -66,16 +67,26 @@ button{
         19px 19px 0 #80569B,
         20px 20px 0 #80569B
 }
-.glass-card {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+li{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+p{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 fieldset{
@@ -99,11 +110,78 @@ fieldset{
 
 .accept{
     background-color: #c5e65c;
+    &:hover{
+    background-color: #a3d20a;
+    }
 }
 
 .reset{
     background-color: #d9434f;
+    &:hover{
+    background-color: #cc0f1f;
 }
+}
+
+input, textarea, select{
+    color: #BDC6AE;            
+    background-color:#222;     
+    margin: 10px 0px; 
+    padding: 10px;
+    border-radius: 4px;
+}
+input[type=checkbox]{
+    appearance: none;
+    background-color: #222;
+    cursor: pointer;
+    &:checked{
+        background-color: #00ffcc;
+    }
+}
+input[type="radio"]{
+    appearance: none;
+    background-color: #222;
+    &:checked{
+        background-color: #00ffcc;
+    }
+
+}
+.checkbox-conditions{
+    appearance: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    border: 2px solid #888;
+    border-radius: 20px;
+    &:checked{
+        background-color: #00ffcc;
+        background-image: url("./imgs/alien-monster-rocket-spaceship-ufo-svgrepo-com.svg");
+        background-size: contain;
+    }
+}
+input[type=range]
+{
+    -webkit-appearance: none;
+    width: 300px;
+    background: transparent;
+    cursor: pointer;
+    &::-webkit-slider-runnable-track {
+    height: 10px;
+    background-color: #222;
+    border-radius: 5px; 
+    }
+    &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 26px;
+    width: 26px;
+    background: #00ffcc;
+    border-radius: 50%;
+    border: 0px solid #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 255, 204, 0.6);
+    margin-top: -9px;
+}
+}
+
 .datos_cliente{
     display: flex;
     flex-wrap: wrap;
@@ -113,12 +191,4 @@ fieldset{
 .gato_abduzido{
     border-radius: 20px;
     align-self: center;
-}
-
-.accept:hover{
-    background-color: #a3d20a;
-}
-
-.reset:hover{
-    background-color: #cc0f1f;
 }

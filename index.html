@@ -24,7 +24,7 @@
                 </p>
                 <p>
                     <label for="email">Correo electrónico: </label>
-                    <input type="email" id = "email" name="email" required pattern="[a-zA-Z0-9_]+@[a-zA-Z0-9]+.com" placeholder="pepito@gmail.com">
+                    <input type="email" id = "email" name="email" required placeholder="pepito@gmail.com">
                 </p>
                 <p>
                     <label for="phoneNumber">Telefono:</label>
@@ -115,11 +115,11 @@
                     <label for="comments">Comentarios: </label>
                     <textarea name="comments" id="comments" rows=5 cols=40 placeholder="Alergias, peticiones raras, etc."></textarea>
                 </p>
-                <p>
-                    <input type="checkbox" id="conditions" name="conditions" required>
-                    <label for="conditions">Acepto las condiciones</label>
-                </p>
             </fieldset>
+            <p>
+                <input type="checkbox" id="conditions" name="conditions" required class="checkbox-conditions">
+                <label for="conditions">No he leído pero acepto las condiciones</label>
+            </p>
             <div class="buttons">
                 <button type="submit" class="accept">Confirmar</button>
                 <button type="reset" class="reset">Resetear </button>
