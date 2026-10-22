@@ -40,7 +40,7 @@
                     <input type="password" id="password" name="password" minlength="8">
                 </p>
             </fieldset> 
-            <h2>T−2: VERIFICACIÓN FINAL...</h2>
+            <h2>T−3: SISTEMAS PREPARADOS...</h2>
             <fieldset>  
                 <legend>Datos del viaje</legend>
                 <p>
@@ -60,23 +60,6 @@
                         <option value="viewCabin">Suite con vistas</option>
                     </select>
                 </p>
-                <fieldset>
-                    <legend class="subLegend">Tipo de traje espacial</legend>
-                    <ul>
-                        <li>
-                            <input type="radio" name="typeOfSpacesuit" id="classic" value = "classic">
-                            <label for="classic">Clásico</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="typeOfSpacesuit" id="premium" value="premium">
-                            <label for="premium">Premium</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="typeOfSpacesuit" id="light" value="light">
-                            <label for="classic">Light</label>
-                        </li>
-                    </ul>
-                </fieldset>
                 <p>
                     <label for="lunarDestinations">Elija tu destinación: </label>
                     <input list="suggestedDestination" id="lunarDestinations" name="lunarDestinations">
@@ -86,6 +69,35 @@
                     </datalist>
                 </p>
             </fieldset>
+            <h2>T-2: VERIFICACIÓN FINAL...</h2>
+            <fieldset>
+                    <legend>Traje y especificaciones físicas</legend>
+                    <p>
+                        <label for="passanger-height">Altura del pasajero: </label>
+                        <input type = "number" id="passanger-height" name="passanger-height" min="150">
+                    </p>
+                    <p>Traje favorito: 
+                        <ul>
+                            <li>
+                                <input type="radio" name="typeOfSpacesuit" id="classic" value = "classic">
+                                <label for="classic">Clásico</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="typeOfSpacesuit" id="premium" value="premium">
+                                <label for="premium">Premium</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="typeOfSpacesuit" id="light" value="light">
+                                <label for="classic">Light</label>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <label for="color-spacesuit">Color del traje: </label>
+                        <input type="color" name="color-spacesuit" id="color-spacesuit" name="color-spacesuit" colorspace="display-p3">
+                    </p>
+                    
+                </fieldset>
             <h2>T−1: MOTORES ACTIVADOS... </h2>
             <fieldset>
                 <legend>Extras y preferencias</legend>

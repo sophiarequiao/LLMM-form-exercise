@@ -33,7 +33,7 @@ legend{
 button{
     all: unset;
     cursor: pointer;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     font-size: 16px;
     color: #222;
@@ -133,23 +133,55 @@ input, textarea, select{
     margin: 10px 0px; 
     padding: 10px;
     border-radius: 4px;
-}
-input[type=checkbox]{
-    appearance: none;
-    background-color: #222;
-    cursor: pointer;
-    &:checked{
-        background-color: #00ffcc;
+
+    &[type=checkbox]{
+        appearance: none;
+        background-color: #222;
+        cursor: pointer;
+        &:checked{
+            background-color: #00ffcc;
+        }
     }
-}
-input[type="radio"]{
-    appearance: none;
-    background-color: #222;
-    &:checked{
-        background-color: #00ffcc;
+    
+    &[type="radio"]{
+        appearance: none;
+        background-color: #222;
+        &:checked{
+            background-color: #00ffcc;
+        }
     }
 
+    &[type="color"] {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        border: 7px groove black;
+    }
+
+    &[type=range]{
+        -webkit-appearance: none;
+        width: 300px;
+        background: transparent;
+        cursor: pointer;
+        &::-webkit-slider-runnable-track {
+            height: 10px;
+            background-color: #222;
+            border-radius: 5px; 
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 26px;
+            width: 26px;
+            background: #00ffcc;
+            border-radius: 50%;
+            border: 0px solid #ffffff;
+            box-shadow: 0px 4px 20px rgba(0, 255, 204, 0.6);
+            margin-top: -9px;
+        }
+    }
 }
+
+
 .checkbox-conditions{
     appearance: none;
     cursor: pointer;
@@ -163,28 +195,6 @@ input[type="radio"]{
         background-image: url("./imgs/alien-monster-rocket-spaceship-ufo-svgrepo-com.svg");
         background-size: contain;
     }
-}
-input[type=range]
-{
-    -webkit-appearance: none;
-    width: 300px;
-    background: transparent;
-    cursor: pointer;
-    &::-webkit-slider-runnable-track {
-    height: 10px;
-    background-color: #222;
-    border-radius: 5px; 
-    }
-    &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 26px;
-    width: 26px;
-    background: #00ffcc;
-    border-radius: 50%;
-    border: 0px solid #ffffff;
-    box-shadow: 0px 4px 20px rgba(0, 255, 204, 0.6);
-    margin-top: -9px;
-}
 }
 
 .datos_cliente{
